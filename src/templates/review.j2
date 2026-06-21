@@ -1,0 +1,7 @@
+# src/templates/review.j2
+{{ system_prompt }}
+
+Analyze the following git diff and provide comments in JSON format:
+{{ diff }}
+
+Respond only with a JSON object containing a "summary" and "comments" list.

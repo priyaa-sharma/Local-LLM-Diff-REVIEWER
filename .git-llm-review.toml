@@ -1,0 +1,4 @@
+# .git-llm-review.toml
+model = "qwen2.5-coder:7b"
+api_base = "http://localhost:11434"
+system_prompt = "You are an expert code reviewer. Analyze the provided git diff and provide constructive feedback."
