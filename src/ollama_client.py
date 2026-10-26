@@ -13,6 +13,6 @@ class OllamaClient:
             "prompt": prompt,
             "stream": False
         }
-        response = httpx.post(url, json=payload, timeout=60.0)
+        response = httpx.post(url, json=payload, timeout=300.0)
         response.raise_for_status()
         return response.json()["response"]
