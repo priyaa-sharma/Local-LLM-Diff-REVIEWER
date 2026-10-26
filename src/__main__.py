@@ -1,5 +1,5 @@
 # src/__main__.py
-from .main import main
+from .gui import main
 
 if __name__ == "__main__":
     main()

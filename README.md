@@ -17,33 +17,35 @@ A lightweight, automated code review tool that uses local LLMs (via Ollama) to a
 
 ### Installation
 
-1. Clone this repository:
-```bash
+Clone the repository, create a virtual environment, and install the project dependencies:
+
+```powershell
 git clone https://github.com/priyaa-sharma/Local-LLM-Diff-REVIEWER.git
 cd Local-LLM-Diff-REVIEWER
-
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install -e .
 ```
 
-
-
-```
-2. Set up your virtual environment and install dependencies:
-   ```bash
-   python -m venv .venv
-   # Activate it (Windows):
-   .venv\Scripts\activate
-   pip install -r requirements.txt
-
-```
+Python 3.11 or newer is required. The desktop interface uses Tkinter, which is included with most standard Python installations.
 
 ## Usage
 
-Run the reviewer manually in your terminal:
+1. Start Ollama and pull the configured model (by default, `qwen2.5-coder:7b`):
 
-```bash
-python -m src
+   ```powershell
+   ollama pull qwen2.5-coder:7b
+   ```
 
-```
+2. In the project folder, launch the GUI:
+
+   ```powershell
+   python -m src
+   ```
+
+3. Choose a Git repository in the window. Stage the changes you want reviewed (`git add <files>`), then select **Refresh staged diff** and **Review staged changes**. The diff and review appear in the two panels.
+
+To continue using the command-line reviewer, run `python -m src.main` from the project folder.
 
 ## Configuration
 
