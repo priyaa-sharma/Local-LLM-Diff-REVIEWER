@@ -1,4 +1,3 @@
-# src/ollama_client.py
 import httpx
 from .config import Config
 
