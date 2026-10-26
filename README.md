@@ -8,6 +8,9 @@ A lightweight, automated code review tool that uses local LLMs (via Ollama) to a
 * **Automated:** Quickly identify bugs and formatting issues before you commit.
 * **Actionable Feedback:** Returns structured JSON output for easy integration.
 
+## Program Screenshot
+![Output SS](image.png)
+
 ## Setup
 
 ### Prerequisites
@@ -50,3 +53,4 @@ To continue using the command-line reviewer, run `python -m src.main` from the p
 ## Configuration
 
 You can customize the review process by editing the `.git-llm-review.toml` file in the root directory.
+
